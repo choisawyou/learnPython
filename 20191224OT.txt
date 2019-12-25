@@ -1,0 +1,31 @@
+20191224
+
+python core -> numpy ->pandas -> scipy stats models -> scikit -> tensor flow ->keras
+       ↓
+crawling
+maria db
+mongo db
+
+R :분석 전용 언어
+pythos : 범용 언어_ 
+
+
+factor 연산은  크기 , 내정으로 나옴
+이를 통해 상관성이 높은 것 끼리 묶을 수 있음
+
+
+전처리 과정 - 결측치
+                     -이상치제거
+                     -범주화*_ mapping을 더 쉽게하려고_ 대부분 범주별로 분석
+                     -정규화_ 값을 0-1까지 정규화하는 것 : min max normalization
+
+python 자료 구조 
+-list_배열과 동일
+-dict(사전형)_hash함수 이용_저장할 때부터 메모리 기억번지를 부여 _ eg) 김 은 108번 번지_key는 중복을 불허
+-set
+-tuple
+
+고속으로 데이터 처리할 때에는 '배열'이 가장 빠르다_but 삽입 삭제가 불량 
+but 파이썬은 '배열' 없음_ 삽입 삭제를 용이하게 하기위해 list 사용 _ 사용 방법은 동일
+
+
