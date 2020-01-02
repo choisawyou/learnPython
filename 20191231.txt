@@ -47,3 +47,7 @@ systemctl stop maria db
 systemctl restart maria db  #시스템 세팅이 변경되었을 때 재시작 
 
 ps-ef | grep httpd  #웹서버가 켜저있는지 확인하는 키 
+
+
+
+
