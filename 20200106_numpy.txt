@@ -1,0 +1,93 @@
+20190106 NUMPY
+
+공부 순서 : 
+numpy  -> pandas -> scipy,statsmodel -> scikits(machine learning) -> tensorflow(deep learning) -> keras(deep learning)
+
+
+python 
+list_연속적 메모리 공간자료 구조 앞뒤 데이터 주소 저장
+
+###NUMPY###
+*행 중심_ 이름별 점수 평균
+
+numpy 배열(array) 
+1차원 vector
+2차원matrix
+3차원tensor
+=>선형대수 처리하기 위하여 
+
+python 의  numpy 는 [자료구조 연산자 제어문 함수] 모두 가지고 있다
+-> 언어라고 생각하면 됨 
+
+numpy의 제어문에서 for 문 제거 _ 함수만 사용하면 처리할 수 있도록 (벡터의 연산)
+=> 이러한 방법이 for문보다 100배 빠르다 ]
+
+numpy -> 행중심 _ 검색할 때에는 이 방법이 ok
+
+numpy는 동질적인 데이터만( 숫자면 숫자 , 문자면 문자 )
+
+
+*numpy는 datatype(dtype)도 가지고 있다._ 대량의 데이터를 저장한다는 전제조건 *
+INT8형 , INT 16 , INT 64형 (작은데이터를 저장할때에는 작은 데이터형 사용 )
+shape
+dimension
+
+
+*numpy 는 연산자(universal function) 많이 보유 *
+
+*행x열 곱에서는 앞뒤를 바꿀 수 없다 
+eg) 4행 3열 * 3행 4열 = 4행 4열
+
+
+###PANDAS(Panel+Analasis)###
+
+열중심 처리 _ 과목 별로 평균
+
+1차원 _ Series(동질 데이터)
+2차원 _ Dataframe(이질 데이터)
+3차원_Panel
+*열 내 동질적,열간 이질적
+
+###scipy,statsmodel ###
+회귀분석과 상관분석으로 검증
+
+ scipy,statsmodel -> Optimization(최적화), Interpolation(보관), Intergrate(적분) , Differential(미분)
+
+*추정과 검정 *
+↓↓↓↓↓↓
+1.카이제곱
+2.anorba(2개이상의 데이터)
+3.marnoba(2개이상의 종속변수)
+4.ankoba
+5.mankoba
+
+
+###sciktits(machine learning)####
+model을 만드는 방법
+↓↓↓↓↓↓
+1.정보기반 학습 . Dicision Tree
+random forest
+adar boost
+grand boost
+xg boost
+
+2.확률 기반 학습. Naive bayes
+표준정규분포
+
+3.유사도 기반 학습
+vector가 표현하는 거리값, 방향 
+가까운거리에 있는 것들은 같은 것으로 취급 
+-피타고라스
+유사도 기반  모델: Kmeans, KNN ,추천(데이터 기반 제품 추천 등+) 등
+
+4.오차 기반 학습. ANN(Artificial neural networks),SVM(support vector machine)
+
+ANN:최적화를 하지않음
+
+SVM:ANN으로 찾은 분리선을 최적화 
+
+
+
+선형회귀 ,상관분석
+정규성 독립성 등
+
