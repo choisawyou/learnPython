@@ -25,8 +25,8 @@ tensor
 
 
 ###pandas###  =  ndarray(배열) + dict(검색)
-dict - data고속 처리가능 but 중복 불가
-단점 보완한 것이 pandas_ 고속처리가능
+dict - data고속 처리가능 but 중복 불가 , 순서 x
+단점 보완한 것이 pandas_ 중복허용 , 순서보장, 고속처리가능
 
 1차원 series
 2차원 dataframe
