@@ -1,0 +1,74 @@
+####Modeling####_ model에 적합하게 데이터를 변경해줘야함 
+Feature Engineering_특성공학을 통해 데이터 변경
+
+
+#정보기반_one hot encoding 이 안되면 안됨_ 범주화
+Decision Tree( 얘는 무조건 해보기) _ 변수선택가능 _ 데이터를 시각화하는데 가장 좋다 
+RT- 변수선택법( 어떤변수가 영향을 많이 미칠것인가)
+ANN
+xg boost
+
+
+
+#확률기반
+Naive bayes
+#유사도기반
+Kmeans _군집화한 후  타겟을 결정하기 위하여 진행_ 타겟이 없지만 타겟을 설정
+ 	_	
+비지도학습은 지도학습을 도와주기 위해
+
+KNN
+#오차기반
+ANN(정규화안하면 결과가 안나옴),SVM
+
+모두 진행한 후 ACCURACY를 가장 높은 방법을 통해 모델링 진행
+
+
+
+
+
+# Feature Engineering
+
+## 전처리##
+1) 결측치
+제거(drop)_(1회성_ 좋은방법이 아니지만 데이터가 많을때는 해도 ok),
+평균값
+0으로 변경
+유사한 값으로 변경
+ 
+2)이상치
+*범주화_ 남여 0,1(categorical) / getdummy
+*정규화_ ann 사용시 정규화 반드시 해야함
+  min max 정규화 => data -min/ max-min
+*Z점수 정규화 : DATA - 평균 / 표준편차 -> 표준정규분포의 확률값을 구할 수 있다.
+  표준정규분포(평균기준) 
+  표준편차의 1배한 범위에 68%
+  표준편차의 2배한 범위에 95%
+  표준편차의 3배한 범위에 99%_ 국방/ 의료에서는 해당범위로 사용 
+평균 (+-) 2X표준오차(95%)
+Z점수 문제점 : 수의 범위가 넓게나와 X축과 만나지않는다 . 이상치가 나올 수 있음
+  z점수 정규화
+
+관측치 - 
+시각화
+
+## 변환(dplyr)_ Transformation##
+-select
+-filter
+-요약
+group by_ 
+cross tab _교차 분석
+pivot_데이터의 변화를 가져오지않고x,y축에 놓고 보기
+pivot table_aggregation함수를 통해 데이터의 변화 o
+aggregation(집계함수)_sum,mean,max,min,last,first
+-함수적용시키는 함수
+ -apply_열행으로 집계 
+ -map_Series에 제공
+ -applymap_\
+-정렬시키는 함수
+ -sort
+ -sort_value 내부에 저장된값으로 정렬
+ -sort_index 인덱스별로 정렬
+-index :계층형 index
+ -file_로딩처리
+ -
