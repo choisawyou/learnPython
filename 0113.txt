@@ -1,0 +1,60 @@
+20200113_싸이킷 
+
+
+ cf)
+ gpu 안함 _ 분산처리_ 고속으로 데이터 처리하는 것
+
+# 싸이킷 
+=>이미 만들어진 model의 파라미터를 추정하는것_문제해결을 위한 도구 
+1.simulation_구조를 만든 후 작동을 시키면서 오차발견 - 개선
+2.optimization_수리적으로 최적화
+3.data mining_데이터 속에서 규칙 발견 후 규칙 탐구 
+=>data통해 모델을 만들고 일반적인 규칙을 찾는 것 _이를 토대로 의사결정(일반화된 문제 해결 not 특수한 문제)
+
+#싸이킷을 통해 3가지를 함 
+1.classification (분류)
+2.regression(예측)
+3.clustering
+
+
+# model 4가지
+1.정보기반_ decision tree, random forest ,아다부스트 ,그러디언부스트(케글에서많이나옴),xg 부스트( gpu,다중어?), stacking
+2.확률기반_나이브베이즈(naive bayes)_텍스트 마이닝할 때 많이 사용
+3.유사도기반_KNN , Kmeans, 추천
+4.오차기반_ANN,SVM(support velt machine?)
+
+# 싸이킷 특징
+cf) tensorflow는 model을 마음대로 만들 수 있따 _복잡한 문제 해결할 때 사용 
+딥러닝 요소가 들어가있따
+인터페이스적 일관성이 있다 
+필요 없는 요소는 deprecate 시킨다 _없어진다
+pandas와 통일시킨다 
+
+estimator _파라미터 추정
+transformer_전처리 
+작동하는것은 fit, predict 
+
+# 전처리
+-결측치:  drop,fill in,zeros,평균,특성 유사도에 의해(knn많이씀) 채워넣기
+-이상치:   IQR x1.5 하면 (95%~99% 사이에 들어감)
+-범주화: one hot encoding(get dummies), cut(일정한 범위), qcut(일정한 갯수로 자르기)
+-정규화: min-max, z점수, robust(3사분위수까지만),nomalization(방향값이 중요)
+- transformation: 변형,요약,arrange
+--변형_select
+       1. model select: k-fold 를통해 나눔
+       2. variable select (변수 선택_변수 중요도 측정) : 
+       3.특성추출(feature extraction):오류가 있거나 이상한 데이터를 추출
+             _ FA(요인분석)_유사한변수를 하나로 묶음
+             _PCA(주성분분석)_상관계수,공분산행렬 => 변수의 중요도를 알아보기 위해 (다중공선성여부 알아보기위해_독립변수간 상관관계 ↑)
+  		          _* LASSO  Ridge ELASTIC : 다중공선성 해결   => REGULIZATION 규제를 통해 과대적합의 위험을 줄임
+             _MDS(다차원척도법)
+
+#평가/검증 방법
+분류:
+Regression 예측: 예측값과 실제값의 상관계수 or mean square(에러값 수준을 통해_(예측값- 실제값)의 제곱) 
+
+
+
+
+                           
+
